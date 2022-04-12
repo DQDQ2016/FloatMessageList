@@ -20,10 +20,9 @@ class MainActivity : AppCompatActivity() {
             "测试发送：新增一条消息,那又会怎么样，这一切会改变吗"
         )
         floatMessageList = findViewById(R.id.float_msg)
-
         findViewById<Button>(R.id.btn_msg).setOnClickListener {
             floatMessageList?.pushMessage(
-                strList[(0..5).random()]
+                FloatMessageList.MessageItem(strList[(0..5).random()],System.currentTimeMillis())
             )
         }
     }

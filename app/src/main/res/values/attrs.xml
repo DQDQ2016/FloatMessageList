@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatMessageList">
+        <attr name="textColor" format="color"/>
+        <attr name="userNameColor" format="color"/>
+    </declare-styleable>
+</resources>
